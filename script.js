@@ -1,10 +1,10 @@
-let currentSLide = 0;
+let currentSlide = 0;
 
 function showSlide(index) {
     const slides =  document.querySelectorAll('.slide');
 
     slides.forEach((slide, i) => {
-        slides.style.display = i === index ? 'flex' : 'none';
+        slide.style.display = i === index ? 'flex' : 'none';
     });
 }
 
